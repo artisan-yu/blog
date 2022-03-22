@@ -1,0 +1,5 @@
+#!/bin/bash
+node gen-sidebar.js
+git add .
+git commit -m "update $1"
+git push -f git@github.com:ayu-666/blog.git master:main

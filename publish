@@ -1,0 +1,11 @@
+#!/bin/bash
+rm -rf ./dist
+mkdir ./dist
+npm i docsify-build -g
+docsify-build
+cd ./dist && git init && git add . && git commit -m "publish"
+git push -f git@github.com:ayu-666/blog.git master:publish
+cd ../
+
+
+
