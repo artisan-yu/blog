@@ -1,5 +1,7 @@
 const fs = require('fs');
 const docsPath = __dirname+"/"
+//是否为空文件夹生成目录
+const keepEmptyDir=true
 const blacklist = [
     '_sidebar.md',
     'img',
@@ -40,6 +42,7 @@ function generateSidebar(obj,_dir,tab){
         if (typeof item == "string"){
             temp += tab+"- ["+key+"]("+item+")\n"
         }else if (typeof item == "object"){
+            if (keepEmptyDir==false && Object.keys(item).length<1){continue}
             temp += generateSidebar(item,key,tab)
         }
     }
