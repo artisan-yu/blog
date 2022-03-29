@@ -7,6 +7,7 @@
 - 开发
   - Golang
     - [go反射](开发/Golang/go反射.md)
+    - [go编译时传入git tag版本号](开发/Golang/go编译时传入git%20tag版本号.md)
     - [使用go1.16新特性embed将vue打包进可执行文件，简化部署流程](开发/Golang/使用go自带特性将vue打包进可执行文件.md)
   - Js
     - [js原生实现异步请求](开发/Js/js原生实现异步请求.md)
