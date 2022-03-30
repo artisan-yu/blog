@@ -5,6 +5,8 @@
     - [编译静态文件优化搜索排名-docsify编译工具](其他/docsify文档网站生成器/编译静态文件优化搜索排名.md)
     - [部署github page](其他/docsify文档网站生成器/部署github%20page.md)
 - 开发
+  - C
+    - [多维数组指针](开发/C/多维数组指针.md)
   - Golang
     - [go反射](开发/Golang/go反射.md)
     - [go编译时传入git tag版本号](开发/Golang/go编译时传入git%20tag版本号.md)
