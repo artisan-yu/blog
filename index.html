@@ -109,8 +109,22 @@
 <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 <style>
+    /*图片最大高度*/
     img{
         max-height: 500px;
+        width: auto;
+    }
+    /*代码自动换行*/
+    .markdown-section pre code {
+        color: #525252;
+        font-size: 0.8rem;
+        padding: 2.2em 5px;
+        line-height: inherit;
+        margin: 0 2px;
+        max-width: inherit;
+        overflow: inherit;
+        white-space: break-spaces !important;
+        word-wrap: break-word !important;
     }
 </style>
 </body>
