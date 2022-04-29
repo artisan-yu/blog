@@ -109,6 +109,14 @@ public function __toString() {
 }
 ```
 
+### __invoke
+
+将实例当作函数调用时,会调用该函数
+
+```php
+public function __invoke($xxx) {}
+```
+
 ### __clone
 
 当对象被克隆时会调用该函数
