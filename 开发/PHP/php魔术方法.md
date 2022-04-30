@@ -140,7 +140,9 @@ public function __sleep() {
 
 ### __wakeup
 
-反序列化前会先检查是否存在__wakeup方法，当wakeup方法存在时，先调用该方法然后再执行反序列化操作
+反序列化完成后会检查是否存在__wakeup方法，当wakeup方法存在时会自动调用
+
+!> 当 *序列化字符串中子元素数* 超过 *代码中类所定义的变量数* 时，该函数将会失效。
 
 ```php
 public function __wakeup() {
