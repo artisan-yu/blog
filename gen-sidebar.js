@@ -5,7 +5,7 @@ const keepEmptyDir=true
 const blacklist = [
     '_sidebar.md',
     'img',
-    "CNAME","README.md","node_modules",'dist'
+    "CNAME","README.md","node_modules",'dist','.css','.js'
 ]
 function getContent(_path,_dir="/"){
     let fsResult = (fs.readdirSync(_path)).filter(item=>!((/^\.+.*/).test(item)))
