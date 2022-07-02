@@ -1,4 +1,4 @@
-# `pping`，一个不止批量ping的工具
+# pping，一个不止批量ping的工具
 
 ## ping
 
