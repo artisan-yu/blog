@@ -54,13 +54,10 @@ function request(url='',method='',params={},headers={},onReady=function (xhr){})
         if (xhr.readyState == 4) onReady(xhr)
     }
 }
-```
 
-#### 使用
+// 百度搜索：制作跨域chrome
 
-> baidu搜一下：跨域chrome
-
-```js
+// 测试一下~
 request("http://www.baidu.com",'get',{wd:"js教程"},{},(xhr)=>{
     console.log(xhr)    
 })
