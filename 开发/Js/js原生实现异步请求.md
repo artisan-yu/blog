@@ -28,3 +28,43 @@ xhr.onreadystatechange = () => {
     }
 }
 ```
+
+
+## 封装请求示例
+```js
+function request(url='',method='',params={},headers={},onReady=function (xhr){}) {
+    let xhr = new XMLHttpRequest(), paramsStr
+    Object.keys(params).forEach((value,index,arr)=>{
+        paramsStr += `${index>0?'&':''}${value}=${params[value]}`
+    })
+    if (method=='') method='get'
+    if (method.toLowerCase()=="get") {
+        if (url.indexOf('?') > -1) {
+            url = url.substr(0,url.indexOf('?')) + paramsStr + url.substr(url.indexof('?')+1)
+        }else {
+            url += '?'+paramsStr
+        }
+    }
+    Object.keys(headers).forEach((value,index,arr)=>{
+        xhr.setRequestHeader(value,headers[value])
+    })
+    xhr.open(method, url)
+    xhr.send(paramsStr)
+    xhr.onreadystatechange = () => {
+        if (xhr.readyState == 4) onReady(xhr)
+    }
+}
+```
+
+#### 使用
+
+> baidu搜一下：跨域chrome
+
+```js
+request("http://www.baidu.com",'get',{wd:"js教程"},{},(xhr)=>{
+    console.log(xhr)    
+})
+```
+
+![a](img/xhr_example1.png)
+
