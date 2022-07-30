@@ -59,7 +59,7 @@ function request(url='',method='',params={},headers={},onReady=function (xhr){})
 // 百度搜索：制作跨域chrome
 
 // 测试一下~
-request("http://www.baidu.com",'get',{wd:"js教程"},{},function(xhr) {
+request("http://www.baidu.com/s",'get',{ie:'utf-8',wd:'js教程'},{},function(xhr) {
     console.log(xhr)    
 })
 ```
