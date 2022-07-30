@@ -30,7 +30,8 @@ xhr.onreadystatechange = () => {
 ```
 
 
-## 封装请求示例
+## 封装示例
+
 ```js
 function request(url='',method='',params={},headers={},onReady=function (xhr){}) {
     let xhr = new XMLHttpRequest(), paramsStr
