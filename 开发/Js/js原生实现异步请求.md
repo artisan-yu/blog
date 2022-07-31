@@ -34,7 +34,7 @@ xhr.onreadystatechange = () => {
 
 ```js
 function request(url='',method='',params={},headers={},onReady=function (xhr){}) {
-    let xhr = new XMLHttpRequest(), paramsStr
+    let xhr = new XMLHttpRequest(), paramsStr=''
     Object.keys(params).forEach((value,index,arr)=>{
         paramsStr += `${index>0?'&':''}${value}=${params[value]}`
     })
@@ -46,10 +46,10 @@ function request(url='',method='',params={},headers={},onReady=function (xhr){})
             url += '?'+paramsStr
         }
     }
+    xhr.open(method, url)
     Object.keys(headers).forEach((value,index,arr)=>{
         xhr.setRequestHeader(value,headers[value])
     })
-    xhr.open(method, url)
     xhr.send(paramsStr)
     xhr.onreadystatechange = () => {
         if (xhr.readyState == 4) onReady(xhr)
