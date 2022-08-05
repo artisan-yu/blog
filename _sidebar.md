@@ -3,12 +3,15 @@
   - DK
     - [多客智慧课堂产品概述](其他/DK/多客智慧课堂.md)
   - docsify文档网站生成器
-    - [快速上手](其他/docsify文档网站生成器/快速上手.md)
-    - [文章分类-侧边栏分组](其他/docsify文档网站生成器/文章分类.md)
-    - [编译静态文件优化搜索排名-docsify编译工具](其他/docsify文档网站生成器/编译静态文件优化搜索排名.md)
-    - [部署github page](其他/docsify文档网站生成器/部署github%20page.md)
-  - [ipv4、掩码、网段](其他/ipv4、掩码、网段怎么来的.md)
-  - [`pping`，一个不止批量ping的工具](其他/pping.md)
+    - [快速上手](其他/docsify文档网站生成器/1.快速上手.md)
+    - [文章分类-侧边栏分组](其他/docsify文档网站生成器/2.文章分类.md)
+    - [部署github page](其他/docsify文档网站生成器/3.部署github%20page.md)
+    - [编译静态文件优化搜索排名-docsify编译工具](其他/docsify文档网站生成器/4.编译静态文件优化搜索排名.md)
+  - [ipv4、掩码、网段](其他/ipv4、掩码、网段.md)
+  - ooxml
+    - [open office xml - word](其他/ooxml/1.入门.md)
+    - [属性域&lt;w:*Pr&gt;&lt;/w:*Pr&gt;](其他/ooxml/2.属性域_Pr.md)
+  - [pping，一个不止批量ping的工具](其他/pping.md)
   - [企业微信应用推送通知所需参数获取教程](其他/企业微信应用推送通知所需参数获取教程.md)
   - [工具网站](其他/工具网站.md)
 - 开发
@@ -27,12 +30,13 @@
     - [js递归实现深拷贝](开发/Js/js递归实现深拷贝.md)
     - [nodejs简单静态文件服务器](开发/Js/nodejs静态服务器.md)
     - [js获取当前网址信息](开发/Js/获取当前网址信息.md)
+  - office open xml
+    - [docx](开发/office%20open%20xml/docx.md)
   - PHP
     - [php序列化与反序列化](开发/PHP/php序列化反序列化.md)
     - [php开启临时服务器](开发/PHP/php开启临时服务器.md)
     - [php class中的魔术方法](开发/PHP/php魔术方法.md)
 - 网络安全
-  - 信息采集
   - 其他
     - [ascii对照表](网络安全/其他/ascii对照表.md)
     - [gif文件存储结构](网络安全/其他/gif文件存储结构.md)

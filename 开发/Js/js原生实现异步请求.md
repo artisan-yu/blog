@@ -33,34 +33,41 @@ xhr.onreadystatechange = () => {
 ## 封装示例
 
 ```js
-function request(url='',method='',params={},headers={},onReady=function (xhr){}) {
+
+function request(options = {url:"", method:"", params:{}, headers:{}, onReady:function (res){}}) {
     let xhr = new XMLHttpRequest(), paramsStr=''
-    Object.keys(params).forEach((value,index,arr)=>{
-        paramsStr += `${index>0?'&':''}${value}=${params[value]}`
+    Object.keys(options.params).forEach((value,index,arr)=>{
+        paramsStr += `${index>0?'&':''}${value}=${options.params[value]}`
     })
-    if (method=='') method='get'
-    if (method.toLowerCase()=="get") {
-        if (url.indexOf('?') > -1) {
-            url = url.substr(0,url.indexOf('?')) + paramsStr + url.substr(url.indexof('?')+1)
+    if (options.method=='') options.method='get'
+    if (options.method.toLowerCase()=="get") {
+        if (options.url.indexOf('?') > -1) {
+            options.url = options.url.substr(0,options.url.indexOf('?')) + paramsStr + options.url.substr(options.url.indexof('?')+1)
         }else {
-            url += '?'+paramsStr
+            options.url += '?'+paramsStr
         }
     }
-    xhr.open(method, url)
-    Object.keys(headers).forEach((value,index,arr)=>{
-        xhr.setRequestHeader(value,headers[value])
+    xhr.open(options.method, options.url)
+    Object.keys(options.headers).forEach((value,index,arr)=>{
+        xhr.setRequestHeader(value,options.headers[value])
     })
     xhr.send(paramsStr)
     xhr.onreadystatechange = () => {
-        if (xhr.readyState == 4) onReady(xhr)
+        if (xhr.readyState == 4) options.onReady(xhr)
     }
 }
 
 // 百度搜索：制作跨域chrome
 
 // 测试一下~
-request("http://www.baidu.com/s",'get',{ie:'utf-8',wd:'js教程'},{},function(xhr) {
-    console.log(xhr)    
+request({
+    url:"http://www.baidu.com/s",
+    method:'get',
+    params:{ie:'utf-8',wd:'js教程'},
+    headers:{},
+    onReady:function(xhr) {
+        console.log(xhr)    
+    }
 })
 ```
 
