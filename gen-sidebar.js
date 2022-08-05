@@ -10,7 +10,7 @@ const blacklist = [
 function getContent(_path,_dir="/"){
     let fsResult = (fs.readdirSync(_path)).filter(item=>!((/^\.+.*/).test(item)))
     fsResult = fsResult.filter(item => blacklist.indexOf(item)<0)
-    fsResult.sort((a, b) => {return a - b})
+    //fsResult = fsResult.sort()
     let result = {}
     for (const i in fsResult) {
         let item = fsResult[i]

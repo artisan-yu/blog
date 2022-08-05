@@ -3,10 +3,10 @@
   - DK
     - [多客智慧课堂产品概述](其他/DK/多客智慧课堂.md)
   - docsify文档网站生成器
-    - [快速上手](其他/docsify文档网站生成器/1.快速上手.md)
-    - [文章分类-侧边栏分组](其他/docsify文档网站生成器/2.文章分类.md)
+    - [快速上手](其他/docsify文档网站生成器/1~~~快速上手.md)
     - [部署github page](其他/docsify文档网站生成器/3.部署github%20page.md)
-    - [编译静态文件优化搜索排名-docsify编译工具](其他/docsify文档网站生成器/4.编译静态文件优化搜索排名.md)
+    - [编译静态文件优化搜索排名-docsify编译工具](其他/docsify文档网站生成器/4=编译静态文件优化搜索排名.md)
+    - [文章分类-侧边栏分组](其他/docsify文档网站生成器/9___文章分类.md)
   - [ipv4、掩码、网段](其他/ipv4、掩码、网段.md)
   - ooxml
     - [open office xml - word](其他/ooxml/1.入门.md)
