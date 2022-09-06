@@ -20,6 +20,7 @@
     - [ardunio](其他/arduino/arduino1.md)
     - [arduino functionally](其他/arduino/functionally.md)
     - [73HC595](其他/arduino/74HC595.md)
+    - [使用两片74HC595驱动8*8 led点阵](其他/arduino/使用led阵列显示图形.md)
 - 开发
   - C
     - [多维数组指针](开发/C/多维数组指针.md)
