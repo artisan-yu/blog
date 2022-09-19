@@ -21,6 +21,10 @@
     - [arduino functionally](其他/arduino/functionally.md)
     - [73HC595](其他/arduino/74HC595.md)
     - [使用两片74HC595驱动8*8 led点阵](其他/arduino/使用led阵列显示图形.md)
+  - [安卓7以上系统用户证书转系统证书](其他/安卓7以上系统用户证书转系统证书.md)
+  - 黑苹果
+    - [OC部分ACPI描述](其他/黑苹果/1.md)
+    - [华为matebook X 2020](其他/黑苹果/huawei%20matebook%20x%202020.md)
 - 开发
   - C
     - [多维数组指针](开发/C/多维数组指针.md)
