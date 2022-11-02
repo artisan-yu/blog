@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄像头</title>
+    <style>
+        .main {
+            text-align: center;
+        }
+
+        #preview {
+            display: flex;
+            flex-flow: row;
+        }
+
+        .preview-item {
+            flex: 1;
+            padding: 0.1em;
+        }
+
+        .preview-item video {
+            background-color: black;
+            pointer-events: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <video autoplay controls width="888" hight="888"></video>
+        <div id="preview"></div>
+    </div>
+
+    <script>
+        const video = document.querySelector('video')
+        var deviceIds = []
+        window.onload = navigator.mediaDevices.enumerateDevices().then(data => {
+            data = data.forEach(item => { item.kind == 'videoinput' ? deviceIds.push(item.deviceId) : null; })
+            init()
+        })
+        function setStream(v,deviceId){
+            navigator.mediaDevices.getUserMedia({ audio: true, video: {deviceId:deviceId} })
+                    .then(stream => {
+                        v.srcObject = stream
+                    })
+                    .catch(err => console.error(err));
+        }
+        function init() {
+            setStream(video,deviceIds[0])
+            Object.keys(deviceIds).forEach(i => {
+                let item = document.getElementsByClassName('preview-itemm')[0]
+                if (!item) {
+                    item = document.createElement("div")
+                    item.onclick = () => { 
+                        setStream(video, deviceIds[i])
+                    }
+                    item.className = 'preview-item'
+                    item.innerHTML = "<video autoplay width='100' height='100'></video>"
+                    document.getElementById("preview").appendChild(item)
+                }
+                setStream(item.getElementsByTagName('video')[0], deviceIds[i])
+            })
+        }
+        
+    </script>
+</body>
+
+</html>
