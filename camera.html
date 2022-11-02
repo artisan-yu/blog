@@ -43,7 +43,7 @@
             init()
         })
         function setStream(v,deviceId){
-            navigator.mediaDevices.getUserMedia({ audio: true, video: {deviceId:deviceId} })
+            navigator.mediaDevices.getUserMedia({ audio: true, video: {deviceId:deviceId,width:1920,height:1080} })
                     .then(stream => {
                         v.srcObject = stream
                     })
