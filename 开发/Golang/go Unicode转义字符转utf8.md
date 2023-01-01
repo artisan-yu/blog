@@ -1,5 +1,8 @@
+# go 将unicode转义字符转回正常utf8编码
 
-```
+ 如`\UA23C350B`
+
+```go
 func Escape2Utf8(data []byte) []byte {
 	re := regexp.MustCompile(`(\\U[0-9a-fA-F]{8})+`)
 	for _, match := range re.FindAll(data, -1) {
