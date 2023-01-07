@@ -29,8 +29,9 @@
   - C
     - [多维数组指针](开发/C/多维数组指针.md)
   - Golang
-    - [go Unicode转义字符转utf8](开发/Golang/go%20Unicode转义字符转utf8.md)
+    - [golang utf8与gbk互转](开发/Golang/go%20utf8与gbk互转.md)
     - [go反射](开发/Golang/go反射.md)
+    - [go 将unicode字符转为utf8编码](开发/Golang/go将unicode字符转为utf8编码.md)
     - [go编译时传入git tag版本号](开发/Golang/go编译时传入git%20tag版本号.md)
     - [go读取excel合并单元格](开发/Golang/go读取excel合并单元格.md)
     - [golang 翻译](开发/Golang/go调用翻译接口.md)
