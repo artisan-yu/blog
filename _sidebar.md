@@ -29,13 +29,15 @@
   - C
     - [多维数组指针](开发/C/多维数组指针.md)
   - Golang
-    - [golang utf8与gbk互转](开发/Golang/go%20utf8与gbk互转.md)
     - [go反射](开发/Golang/go反射.md)
-    - [go 将unicode字符转为utf8编码](开发/Golang/go将unicode字符转为utf8编码.md)
     - [go编译时传入git tag版本号](开发/Golang/go编译时传入git%20tag版本号.md)
-    - [go读取excel合并单元格](开发/Golang/go读取excel合并单元格.md)
     - [golang 翻译](开发/Golang/go调用翻译接口.md)
     - [golang使用embed将vue打包进可执行文件，简化部署流程](开发/Golang/使用go自带特性将vue打包进可执行文件.md)
+    - 编码
+      - [golang utf8与gbk互转](开发/Golang/编码/go%20utf8与gbk互转.md)
+      - [go将unicode字符转为utf8编码](开发/Golang/编码/go将unicode字符转为utf8编码.md)
+    - 自动化办公
+      - [go读取excel合并单元格](开发/Golang/自动化办公/go读取excel合并单元格.md)
   - Js
     - [js原生实现异步请求](开发/Js/js原生实现异步请求.md)
     - [js实现sleep睡眠函数](开发/Js/js实现sleep睡眠函数.md)
