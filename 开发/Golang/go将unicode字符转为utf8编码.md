@@ -1,4 +1,4 @@
-# go 将unicode转义字符转回正常utf8编码
+# go 将unicode字符转为utf8编码
 
  如`\UA23C350B`
 
