@@ -31,7 +31,7 @@
   - Golang
     - [go反射](开发/Golang/go反射.md)
     - [go编译时传入git tag版本号](开发/Golang/go编译时传入git%20tag版本号.md)
-    - [golang 翻译](开发/Golang/go调用翻译接口.md)
+    - [golang调用翻译接口](开发/Golang/go调用翻译接口.md)
     - [golang使用embed将vue打包进可执行文件，简化部署流程](开发/Golang/使用go自带特性将vue打包进可执行文件.md)
     - 编码
       - [golang utf8与gbk互转](开发/Golang/编码/go%20utf8与gbk互转.md)

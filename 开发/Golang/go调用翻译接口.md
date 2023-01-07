@@ -1,4 +1,4 @@
-# golang 翻译
+# golang调用翻译接口
 
 ## 百度api
 
