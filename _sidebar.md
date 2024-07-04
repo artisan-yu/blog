@@ -109,8 +109,6 @@
 ](运维/linux/centos更新内核.md)
     - [rsa私钥密码修改
 ](运维/linux/rsa私钥密码修改.md)
-    - [rsa认证免密登录ssh
-](运维/linux/rsa认证免密登录ssh.md)
     - [利用ssh开启加密代理隧道
 ](运维/linux/利用ssh开启加密代理隧道.md)
     - [用docker快速搭建dvwa靶场](运维/linux/用docker快速搭建测试环境.md)
